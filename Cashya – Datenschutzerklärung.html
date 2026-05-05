@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cashya – Datenschutzerklärung</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap');
+
+  :root {
+    --teal: #1B998B;
+    --teal-light: #26C9B5;
+    --teal-dim: rgba(27,153,139,0.12);
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b7280;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0c0c;
+      --surface: #161616;
+      --text: #f0f0ef;
+      --muted: #9ca3af;
+      --border: rgba(255,255,255,0.08);
+      --teal-dim: rgba(27,153,139,0.15);
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 60px 24px 48px;
+    max-width: 720px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #1B998B, #0D7A6E);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--text);
+    letter-spacing: -0.3px;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .subtitle strong {
+    color: var(--teal);
+    font-weight: 500;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .toc {
+    background: var(--teal-dim);
+    border-left: 3px solid var(--teal);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+  }
+
+  .toc p {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .toc ol {
+    padding-left: 18px;
+  }
+
+  .toc li {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .toc a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .toc a:hover { color: var(--teal); }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--teal);
+    background: var(--teal-dim);
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    color: var(--text);
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 14px;
+  }
+
+  ul li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+    color: var(--text);
+    font-weight: 300;
+  }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+  }
+
+  .highlight {
+    background: var(--teal-dim);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .highlight p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--teal-dim);
+    color: var(--teal);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+    font-weight: 300;
+  }
+
+  footer a {
+    color: var(--teal);
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  @media (max-width: 480px) {
+    header, main, footer { padding-left: 16px; padding-right: 16px; }
+    footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path d="M19 5 A10 10 0 1 0 19 23" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="8" y="18" width="2.5" height="5" rx="0.5" fill="rgba(255,255,255,0.4)"/>
+        <rect x="12" y="15" width="2.5" height="8" rx="0.5" fill="rgba(255,255,255,0.6)"/>
+        <rect x="16" y="12" width="2.5" height="11" rx="0.5" fill="rgba(255,255,255,0.85)"/>
+      </svg>
+    </div>
+    <span class="logo-text">Cashya</span>
+  </div>
+  <h1>Datenschutzerklärung</h1>
+  <p class="subtitle">Zuletzt aktualisiert: <strong>Mai 2026</strong></p>
+</header>
+
+<main>
+
+  <div class="toc">
+    <p>Inhalt</p>
+    <ol>
+      <li><a href="#ueberblick">Überblick</a></li>
+      <li><a href="#daten">Welche Daten werden gespeichert?</a></li>
+      <li><a href="#icloud">iCloud & Synchronisation</a></li>
+      <li><a href="#backup">Backup & Verschlüsselung</a></li>
+      <li><a href="#dritte">Weitergabe an Dritte</a></li>
+      <li><a href="#rechte">Deine Rechte</a></li>
+      <li><a href="#kinder">Kinder</a></li>
+      <li><a href="#aenderungen">Änderungen</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ol>
+  </div>
+
+  <section id="ueberblick">
+    <h2><span class="num">01</span> Überblick</h2>
+    <div class="highlight">
+      <div class="badge">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M6 1L7.5 4.5L11 5L8.5 7.5L9 11L6 9.5L3 11L3.5 7.5L1 5L4.5 4.5Z" fill="#1B998B"/>
+        </svg>
+        Kurzzusammenfassung
+      </div>
+      <p>Cashya speichert alle deine Finanzdaten <strong>ausschliesslich lokal auf deinem Gerät</strong> und – wenn von dir aktiviert – in deinem persönlichen iCloud-Account. Wir haben keinen Zugriff auf deine Daten. Wir verkaufen keine Daten. Wir zeigen keine Werbung.</p>
+    </div>
+    <p>Diese Datenschutzerklärung beschreibt, wie die App Cashya («wir», «die App») mit deinen Daten umgeht. Cashya ist eine persönliche Finanz-App für iOS, entwickelt von Mario Lüthy.</p>
+  </section>
+
+  <section id="daten">
+    <h2><span class="num">02</span> Welche Daten werden gespeichert?</h2>
+    <p>Cashya speichert ausschliesslich Daten, die du selbst erfasst:</p>
+    <ul>
+      <li>Transaktionen (Betrag, Datum, Kategorie, Notizen, Tags)</li>
+      <li>Wiederkehrende Transaktionen</li>
+      <li>Eigene Kategorien und Unterkategorien</li>
+      <li>App-Einstellungen (Darstellung, Währung, Präferenzen)</li>
+    </ul>
+    <p>Diese Daten verlassen dein Gerät nur dann, wenn du iCloud Sync oder die Backup-Funktion aktivierst – und auch dann nur in deinen persönlichen iCloud-Account.</p>
+    <p><strong>Wir erheben keine Nutzungsstatistiken, keine Analytics und keine Absturz­berichte.</strong></p>
+  </section>
+
+  <section id="icloud">
+    <h2><span class="num">03</span> iCloud & Synchronisation</h2>
+    <p>Wenn du iCloud Sync in den Einstellungen aktivierst, werden deine Daten über Apples CloudKit-Dienst zwischen deinen Geräten synchronisiert.</p>
+    <ul>
+      <li>Die Synchronisation erfolgt über deinen persönlichen iCloud-Account</li>
+      <li>Apple verwaltet die Infrastruktur – es gelten Apples Datenschutz­bedingungen</li>
+      <li>Wir als Entwickler haben <strong>keinen Zugriff</strong> auf deine CloudKit-Daten</li>
+      <li>iCloud Sync kann jederzeit in den Einstellungen deaktiviert werden</li>
+    </ul>
+    <p>Weitere Informationen zu Apples Datenschutz findest du unter <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank">apple.com/legal/privacy</a>.</p>
+  </section>
+
+  <section id="backup">
+    <h2><span class="num">04</span> Backup & Verschlüsselung</h2>
+    <p>Die Backup-Funktion erstellt eine verschlüsselte Kopie deiner Daten in deinem iCloud Drive.</p>
+    <ul>
+      <li>Backups werden mit <strong>AES-256-GCM</strong> verschlüsselt</li>
+      <li>Der Verschlüsselungs­schlüssel wird sicher in deinem Geräteschlüsselbund (Keychain) gespeichert</li>
+      <li>Ohne den Schlüssel sind die Backup-Daten für niemanden lesbar – auch nicht für uns</li>
+      <li>Backups liegen ausschliesslich in deinem persönlichen iCloud Drive</li>
+    </ul>
+    <div class="highlight">
+      <p>Wichtig: Wenn du dein Gerät wechselst, stelle sicher dass dein iCloud Keychain aktiviert ist, damit der Verschlüsselungs­schlüssel auf das neue Gerät übertragen wird.</p>
+    </div>
+  </section>
+
+  <section id="dritte">
+    <h2><span class="num">05</span> Weitergabe an Dritte</h2>
+    <p>Wir geben <strong>keine</strong> deiner Daten an Dritte weiter. Cashya enthält:</p>
+    <ul>
+      <li>Keine Werbenetzwerke</li>
+      <li>Keine Analytics-Dienste von Drittanbietern</li>
+      <li>Keine In-App-Tracking-Systeme</li>
+      <li>Keine Social-Media-Integrationen</li>
+    </ul>
+    <p>Die einzige externe Verbindung der App ist die Feedback-Funktion, die deine Standard-Mail-App öffnet. Dabei werden keinerlei Daten automatisch übermittelt – du entscheidest was du sendest.</p>
+  </section>
+
+  <section id="rechte">
+    <h2><span class="num">06</span> Deine Rechte</h2>
+    <p>Da alle Daten lokal auf deinem Gerät gespeichert sind, hast du vollständige Kontrolle:</p>
+    <ul>
+      <li><strong>Einsicht:</strong> Alle Daten sind direkt in der App einsehbar</li>
+      <li><strong>Löschung:</strong> In den Einstellungen kannst du alle Daten löschen</li>
+      <li><strong>Export:</strong> Die Backup-Funktion erstellt eine vollständige Kopie deiner Daten</li>
+      <li><strong>Portabilität:</strong> Backup-Dateien sind im JSON-Format und können gelesen werden</li>
+    </ul>
+    <p>Für Fragen zum Datenschutz erreichst du uns per E-Mail (siehe Kontakt).</p>
+  </section>
+
+  <section id="kinder">
+    <h2><span class="num">07</span> Kinder</h2>
+    <p>Cashya richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern. Falls du der Meinung bist, dass ein Kind unter 13 Jahren die App verwendet, wende dich bitte an uns.</p>
+  </section>
+
+  <section id="aenderungen">
+    <h2><span class="num">08</span> Änderungen dieser Erklärung</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung bei wesentlichen Änderungen der App zu aktualisieren. Das Datum der letzten Aktualisierung ist oben auf dieser Seite vermerkt. Bei grundlegenden Änderungen informieren wir über die App.</p>
+  </section>
+
+  <section id="kontakt">
+    <h2><span class="num">09</span> Kontakt</h2>
+    <p>Bei Fragen zum Datenschutz oder zur App erreichst du uns unter:</p>
+    <div class="highlight">
+      <p><strong>Mario Lüthy</strong><br>
+      E-Mail: <a href="mailto:mario.luethy@icloud.com">mario.luethy@icloud.com</a><br>
+      Schweiz</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mario Lüthy · Cashya</p>
+  <a href="mailto:mario.luethy@icloud.com">mario.luethy@icloud.com</a>
+</footer>
+
+</body>
+</html>
