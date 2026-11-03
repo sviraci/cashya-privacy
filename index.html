@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cashya — Datenschutzerklärung · Privacy Policy</title>
+<meta name="description" content="Datenschutzerklärung der App Cashya · Privacy Policy for the Cashya app.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root{
+    --bg:#0a1514; --panel:#0f201e; --line:#1d3a37;
+    --text:#e8f3f1; --muted:#9ab5b1; --accent:#1fbfa6; --accent-2:#00e5a0;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 72px}
+  header{text-align:center;padding:22px 0 6px}
+  .logo{width:72px;height:72px;border-radius:18px;display:block;margin:0 auto 14px;
+        box-shadow:0 10px 30px rgba(0,0,0,.45)}
+  h1{font-size:1.9rem;margin:0 0 4px;letter-spacing:-.02em}
+  .sub{color:var(--muted);margin:0 0 22px}
+  .langbar{display:flex;gap:8px;justify-content:center;margin:0 0 30px}
+  .langbar button{
+    background:var(--panel);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:7px 16px;font-size:.9rem;cursor:pointer;font-family:inherit;
+  }
+  .langbar button[aria-pressed="true"]{background:var(--accent);color:#04100f;border-color:var(--accent);font-weight:600}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:18px;
+          padding:22px 24px;margin:0 0 16px}
+  h2{font-size:1.1rem;margin:0 0 12px;color:var(--accent-2);letter-spacing:-.01em}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-left:20px}
+  li{margin:0 0 8px}
+  .muted{color:var(--muted)}
+  .updated{text-align:center;color:var(--muted);font-size:.9rem;margin:0 0 24px}
+  .lead{background:rgba(31,191,166,.08);border:1px solid rgba(31,191,166,.28)}
+  footer{margin-top:34px;text-align:center;color:var(--muted);font-size:.9rem;line-height:2}
+  footer a{color:var(--accent);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  .sep{color:var(--line);margin:0 8px}
+  [data-lang]{display:none}
+  [data-lang].on{display:block}
+  @media (max-width:520px){ h1{font-size:1.6rem} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="logo" src="icon.png" alt="Cashya">
+    <h1>Cashya</h1>
+    <p class="sub">Datenschutzerklärung · Privacy Policy</p>
+  </header>
+
+  <div class="langbar">
+    <button id="btn-de" aria-pressed="true"  onclick="setLang('de')">🇩🇪 Deutsch</button>
+    <button id="btn-en" aria-pressed="false" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+
+  <!-- ───────────────── Deutsch ───────────────── -->
+  <div data-lang="de" class="on">
+    <p class="updated">Zuletzt aktualisiert: Juni 2026</p>
+
+    <section class="lead">
+      <h2>1. Überblick</h2>
+      <p>Cashya speichert alle deine Finanzdaten ausschliesslich lokal auf deinem Gerät und – wenn
+         von dir aktiviert – in deinem persönlichen Cloud-Account. Wir haben keinen Zugriff auf deine
+         Daten. Wir verkaufen keine Daten. Wir zeigen keine Werbung.</p>
+      <p>Diese Datenschutzerklärung beschreibt, wie die App Cashya («wir», «die App») mit deinen Daten
+         umgeht. Cashya ist eine persönliche Finanz-App für iOS und Android, entwickelt von Mario Lüthy.</p>
+    </section>
+
+    <section>
+      <h2>2. Welche Daten werden gespeichert?</h2>
+      <p>Cashya speichert ausschliesslich Daten, die du selbst erfasst:</p>
+      <ul>
+        <li>Transaktionen (Betrag, Datum, Kategorie, Notizen, Tags)</li>
+        <li>Wiederkehrende Transaktionen</li>
+        <li>Eigene Kategorien und Unterkategorien</li>
+        <li>App-Einstellungen (Darstellung, Währung, Präferenzen)</li>
+      </ul>
+      <p>Diese Daten verlassen dein Gerät nur, wenn du die optionale Backup-/Sync-Funktion aktivierst
+         – und dann ausschliesslich in deinen persönlichen Cloud-Account.</p>
+      <p>Wir erheben keine Nutzungsstatistiken, keine Analytics und keine Absturzberichte.</p>
+    </section>
+
+    <section>
+      <h2>3. Cloud-Synchronisation &amp; Backup</h2>
+      <p><strong>iOS:</strong> Wenn du iCloud Sync oder iCloud Drive Backup aktivierst, werden deine
+         Daten über Apples CloudKit-Dienst in deinen persönlichen iCloud-Account übertragen. Wir haben
+         keinen Zugriff. Backups sind AES-256-GCM-verschlüsselt; der Schlüssel liegt in deinem
+         Geräteschlüsselbund (Keychain).</p>
+      <p><strong>Android:</strong> Wenn du das optionale Google Drive Backup aktivierst, werden deine
+         Daten über Googles Drive API in deinen persönlichen Google Drive gespeichert. Wir haben keinen
+         Zugriff. Du kannst Backups jederzeit in den Einstellungen deaktivieren und löschen.</p>
+      <p class="muted">Cloud-Synchronisation und Backup sind optionale Funktionen und standardmässig
+         deaktiviert.</p>
+    </section>
+
+    <section>
+      <h2>4. Käufe &amp; Abonnements</h2>
+      <p><strong>iOS:</strong> Abgewickelt über Apples In-App Purchase. Zahlungsdaten verarbeitet
+         ausschliesslich Apple. Wir erhalten keine Zahlungsdaten.</p>
+      <p><strong>Android:</strong> Abgewickelt über Google Play Billing. Zahlungsdaten verarbeitet
+         ausschliesslich Google. Wir erhalten keine Zahlungsdaten. Es gelten Googles
+         Datenschutzbestimmungen.</p>
+    </section>
+
+    <section>
+      <h2>5. Weitergabe an Dritte</h2>
+      <p>Wir geben keine deiner Daten an Dritte weiter. Cashya enthält keine Werbenetzwerke, keine
+         Analytics-Dienste, keine Tracking-Systeme und keine Social-Media-Integrationen. Die einzige
+         externe Verbindung ist die Feedback-Funktion, die deine Mail-App öffnet – dabei werden keine
+         Daten automatisch übermittelt.</p>
+    </section>
+
+    <section>
+      <h2>6. Deine Rechte</h2>
+      <ul>
+        <li><strong>Einsicht:</strong> Alle Daten sind direkt in der App sichtbar</li>
+        <li><strong>Löschung:</strong> In den Einstellungen kannst du alle Daten löschen</li>
+        <li><strong>Export:</strong> Die Backup-Funktion erstellt eine vollständige Kopie</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Kinder</h2>
+      <p>Cashya richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von
+         Kindern.</p>
+    </section>
+
+    <section>
+      <h2>8. Änderungen</h2>
+      <p>Bei wesentlichen Änderungen der App aktualisieren wir diese Erklärung. Das Datum der letzten
+         Aktualisierung ist oben vermerkt.</p>
+    </section>
+
+    <section>
+      <h2>9. Kontakt</h2>
+      <p>Mario Lüthy · <a href="mailto:neftiapps@gmail.com" style="color:var(--accent)">neftiapps@gmail.com</a> · Schweiz</p>
+    </section>
+  </div>
+
+  <!-- ───────────────── English ───────────────── -->
+  <div data-lang="en">
+    <p class="updated">Last updated: June 2026</p>
+
+    <section class="lead">
+      <h2>1. Overview</h2>
+      <p>Cashya stores all your financial data exclusively on your device and – if enabled by you – in
+         your personal cloud account. We have no access to your data. We do not sell data. We do not
+         show ads.</p>
+      <p>Cashya is a personal finance app for iOS and Android, developed by Mario Lüthy.</p>
+    </section>
+
+    <section>
+      <h2>2. What data is stored?</h2>
+      <ul>
+        <li>Transactions (amount, date, category, notes, tags)</li>
+        <li>Recurring transactions</li>
+        <li>Custom categories and subcategories</li>
+        <li>App settings (appearance, currency, preferences)</li>
+      </ul>
+      <p>This data only leaves your device if you enable the optional backup/sync feature – and only
+         to your personal cloud account.</p>
+      <p>We do not collect usage statistics, analytics, or crash reports.</p>
+    </section>
+
+    <section>
+      <h2>3. Cloud Sync &amp; Backup</h2>
+      <p><strong>iOS:</strong> iCloud Sync and Backup use Apple's CloudKit service and your personal
+         iCloud account. We have no access. Backups are encrypted with AES-256-GCM; the key is stored
+         in your device's Keychain.</p>
+      <p><strong>Android:</strong> The optional Google Drive Backup stores your data in your personal
+         Google Drive via Google's Drive API. We have no access. You can disable and delete backups at
+         any time in Settings.</p>
+      <p class="muted">Cloud sync and backup are optional and disabled by default.</p>
+    </section>
+
+    <section>
+      <h2>4. Purchases &amp; Subscriptions</h2>
+      <p><strong>iOS:</strong> Processed via Apple's In-App Purchase. Payment data is handled
+         exclusively by Apple. We receive no payment data.</p>
+      <p><strong>Android:</strong> Processed via Google Play Billing. Payment data is handled
+         exclusively by Google. We receive no payment data. Google's privacy policy applies.</p>
+    </section>
+
+    <section>
+      <h2>5. Third-Party Sharing</h2>
+      <p>We do not share any of your data with third parties. Cashya contains no advertising networks,
+         analytics services, tracking systems, or social media integrations. The only external
+         connection is the feedback feature which opens your mail app – no data is transmitted
+         automatically.</p>
+    </section>
+
+    <section>
+      <h2>6. Your Rights</h2>
+      <ul>
+        <li><strong>Access:</strong> All data is visible within the app</li>
+        <li><strong>Deletion:</strong> Delete all data in Settings</li>
+        <li><strong>Export:</strong> Backup feature creates a full copy of your data</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Children</h2>
+      <p>Cashya is not directed at children under 13. We do not knowingly collect data from children.</p>
+    </section>
+
+    <section>
+      <h2>8. Changes</h2>
+      <p>We may update this policy when there are significant changes to the app. The date of the last
+         update is noted above.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>Mario Lüthy · <a href="mailto:neftiapps@gmail.com" style="color:var(--accent)">neftiapps@gmail.com</a> · Switzerland</p>
+    </section>
+  </div>
+
+  <footer>
+    <div>
+      <a href="https://sviraci.github.io/">
+        <span data-lang="de" class="on" style="display:inline">Startseite</span><span data-lang="en" style="display:none">Home</span>
+      </a>
+      <span class="sep">·</span>
+      <a href="https://sviraci.github.io/terms.html">
+        <span data-lang="de" class="on" style="display:inline">Nutzungsbedingungen</span><span data-lang="en" style="display:none">Terms of Service</span>
+      </a>
+      <span class="sep">·</span>
+      <a href="mailto:neftiapps@gmail.com">neftiapps@gmail.com</a>
+    </div>
+    <div class="muted">© 2026 Mario Lüthy · Schweiz / Switzerland</div>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      var match = el.getAttribute('data-lang') === l;
+      if (el.tagName === 'SPAN') {
+        el.style.display = match ? 'inline' : 'none';
+        el.classList.toggle('on', match);
+      } else {
+        el.classList.toggle('on', match);
+      }
+    });
+    document.getElementById('btn-de').setAttribute('aria-pressed', String(l === 'de'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(l === 'en'));
+    try { localStorage.setItem('cashya-lang', l); } catch (e) {}
+  }
+  (function(){
+    var saved = null;
+    try { saved = localStorage.getItem('cashya-lang'); } catch (e) {}
+    var l = saved || ((navigator.language || 'de').toLowerCase().indexOf('de') === 0 ? 'de' : 'en');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>
